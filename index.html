@@ -1,0 +1,60 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body class="body-background">
+  <div class="container">
+    
+    <center>
+<img src="https://i.pinimg.com/originals/ac/b8/bd/acb8bd2146ce943c223b369a26815a7e.png" class="img-circle" width="200"><h1><b>Facial Recognition Webapp</b></h1>
+      <br><br>
+
+      <p style="font-size: 22px;">Model can identify-- </p>
+<br>
+      <b class="name_of_objects">
+<button class="btn btn-info" id="father">Father</button>
+  <hr>
+  <button class="btn btn-info" id="mother">Mother</button>
+  <hr>
+  <button class="btn btn-info" id="sister">Sister</button>
+  <hr>
+  <button class="btn btn-info" id="brother">Brother</button>
+  <hr>
+
+  </b>
+
+      <h2><label>Webcam View - </label>
+      <div id="camera"></div>
+
+      <br><br>
+      <div id="result"></div>
+      <br><br>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpd0kWxGq-7-d0YSDZf_mjGjis2K9jcanaOH_GlJSwEE5Ivs2uZbnn9jS_eezu2VWroIg&usqp=CAU" class="img-circle"  width="50">
+      <button onclick="take_snapshot();" class="btn btn-info"> Capture Image</button>
+      <br><br>
+      <img src="https://media.istockphoto.com/vectors/magnifying-glass-icon-in-flat-style-search-loupe-on-color-background-vector-id1098360020?k=6&m=1098360020&s=612x612&w=0&h=S1CafyqQiD2UUvNnBpZ9k19aKIke_Dch98FyjvFR0yU=" class="img-circle" width="50">
+      <button onclick="check();" class="btn btn-success"> Identify Image</button>
+      <br><br>
+
+      <p style="font-size: 22px;"><em><b>Object :  <span id="result_member_name"></span></p>
+      
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
